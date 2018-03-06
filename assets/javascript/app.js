@@ -86,7 +86,7 @@ var game = {
         if (game.currentQuestion==questions.length-1){
             setTimeout(game.results, 3*1000);
         } else {
-            setTimeout(game.nextQuestion, 3*100);
+            setTimeout(game.nextQuestion, 3*1000);
         }
     },
     results: function(){
@@ -117,7 +117,7 @@ var game = {
         if (game.currentQuestion==questions.length-1){
             setTimeout(game.results, 3*1000);
         } else {
-            setTimeout(game.nextQuestion, 3*100);
+            setTimeout(game.nextQuestion, 3*1000);
         }
     
     },
@@ -128,9 +128,9 @@ var game = {
         $("#subwrapper").html('<h2>Sorry, you got it wrong..</h2>');
         $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
         if (game.currentQuestion==questions.length-1){
-            setTimeout(game.results, 3 * 1000);
+            setTimeout(game.results, 3*1000);
         } else {
-            setTimeout(game.nextQuestion, 3*100);
+            setTimeout(game.nextQuestion, 3*1000);
         }
     },
     reset: function(){
